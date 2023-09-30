@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.min.css">
+    <title>Ejercicios JS</title>
+</head>
+
+<body>
+    <!-- Puse esto dentro de un nav -->
+
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <h1 style="font-style: inherit; color: white;">Ejercicios de Algoritmos en JS</h1>
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <h5 style="font-size: medium; justify-content: left; color: white; margin: 3%;">Evidencia de
+                        aprendizaje:
+                        AA2-EV01 Taller aplicando estructuras y procedimientos en la solución de algoritmos.
+                        (JavaScript)
+                    </h5>
+                    <h5 style="font-size: medium; justify-content: left; color: white; margin: 3%;">
+                        Aprendiz: Angelo Velasquez Ladino
+                    </h5>
+                    <h5 style="font-size: medium; justify-content: left; color: white; margin: 3%;">
+                        Ficha: 2721446
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 3%">
+        <div class="row">
+
+            <!-- Ejercicio 1 -->
+
+            <div class="card border-dark mb-3" style="max-width: 40rem; margin-right: 20px;">
+                <h1>Ejercicio 1</h1>
+                <h5>Sistema de calculo de saldo bancario en un año con un interes mensual del 2%</h5>
+                <div class="col-md-6">
+                    <form id="form1" style="margin-top: 15px;">
+                        <h5>Ingrese el saldo Inicial:</h5>
+                        <input class="form-control" type="number" name="saldoInicial" id="saldoInicial" required>
+                        <button class="btn btn-dark" style="margin-top: 10px; margin-bottom: 10px;">Guardar</button>
+                    </form>
+                    <div id="result"></div>
+                </div>
+            </div>
+
+            <!-- Ejercicio 2 -->
+
+            <div class="card border-dark mb-3" style="max-width: 40rem;">
+                <h1>Ejercicio 2</h1>
+                <h5>En este ejercicio calcularemos el costo por kilo de manzanas aplicando descuentos</h5>
+                <table class="table table-hover ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Numero de Kilos</th>
+                            <th scope="col">% de descuento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                            <td>0 - 2</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr class="table-active">
+                            <td>2,01 - 5</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr class="table-active">
+                            <td>5,01 - 10</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr class="table-active">
+                            <td>10,01 EN ADELANTE</td>
+                            <td>20%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="col-md-6">
+                    <form id="form2" style="margin-top: 15px;">
+                        <h5>Ingrese la cantidad de kilos de manzanas a comprar:</h5>
+                        <input class="form-control" type="number" name="kilos" id="kilos" required>
+                        <button class="btn btn-dark" style="margin-top: 10px; margin-bottom: 10px;">Guardar</button>
+                    </form>
+                    <div id="result2"></div>
+                </div>
+            </div>
+
+            <!-- Ejercicio 3 -->
+
+            <div class="card border-dark mb-3" style="max-width: 40rem; margin-right: 20px;">
+                <h1>Ejercicio 3</h1>
+                <h5>desarrollar un algoritmo que calcule el salario neto que debe recibir un vendedor de un almacén. Se
+                    debe tener en cuenta si tiene derecho o no al auxilio de transporte.</h5>
+
+                <form id="form3" style="margin-top: 15px;">
+                    <h5>Datos del Empleado</h5>
+                    <div style="display: grid; margin-bottom: 5%;">
+                        <h6 style="margin-top: 10px;">Cedula</h6>
+                        <input class="form-control" type="number" name="cedula" id="cedula" required
+                            placeholder="Ingrese la cedula">
+                        <h6 style="margin-top: 10px;">Nombre</h6>
+                        <input class="form-control" type="text" name="nombre" id="name" required
+                            placeholder="nombre del empleado">
+                        <h6 style="margin-top: 10px;">Salario</h6>
+                        <input class="form-control" type="number" name="salario" id="salario" required
+                            placeholder="salario básico del empleado">
+                        <h6 style="margin-top: 10px;">Días Laborados</h6>
+                        <input class="form-control" type="number" name="diaslaborados" id="diasLaborados" 
+                            placeholder="(entre 1 y 30) Valor por defecto: 1">
+                        <h6 style="margin-top: 10px;">Prestamos</h6>
+                        <input class="form-control" type="number" name="prestamos" id="prestamos"
+                            placeholder="préstamos del empleado">
+                        <h6 style="margin-top: 10px;">Total de ventas del mes</h6>
+                        <input class="form-control" type="number" name="ventasMes" id="ventasMes" 
+                            placeholder="Ventas del Mes">
+                    </div>
+                    <button class="btn-dark btn" style="margin-bottom: 10px;">Guardar</button>
+                </form>
+                <div id="result3"></div>
+            </div>
+
+            <!-- Ejercicio 4 -->
+
+            <div class="card border-dark mb-3" style="max-width: 40rem">
+                <h1>Ejercicio 4</h1>
+                <h5>Algoritmo de secuencia de numeros triangulares</h5>
+                <div class="col-md-6">
+                    <form id="form4" style="margin-top: 15px;">
+                        <h5>Ingrese el número de iteraciones que desea: </h5>
+                        <input class="form-control" type="number" name="num" id="num" required>
+                        <button class="btn btn-dark" style="margin-top: 10px; margin-bottom: 10px;">Guardar</button>
+                    </form>
+                    <div id="result4"></div>
+                </div>
+            </div>
+
+            <!-- Ejercicio 5 -->
+
+            <div class="card border-dark" style="max-width: 40rem; margin: auto;">
+                <h1>Ejercicio 5</h1>
+                <h5>Algoritmo que permite calcular los datos de una fiesta</h5>
+                <div class="col-md-6">
+                    <form id="form5" style="margin-top: 15px;">
+                        <h5>Nombre:</h5>
+                        <input class="form-control" type="text" id="nombre" required><br><br>
+
+                        <h5>Edad:</h5>
+                        <input class="form-control" type="number" id="edad" required><br><br>
+
+                        <h5>Sexo:</h5>
+                        <select class="form-select" id="sexo" required>
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select><br><br>
+
+                        <button class="btn btn-dark" style="margin-bottom: 10px;">Agregar</button>
+                    </form>
+                    <div id="result5" style="margin-bottom: 10px;">
+                        <h2>Resultados:</h2>
+                        <h6>Total de personas asistieron a la fiesta: <span id="totalPersonas">0</span></h6>
+                        <h6>Total de hombres: <span id="totalHombres">0</span></h6>
+                        <h6>Total de mujeres: <span id="totalMujeres">0</span></h6>
+                        <h6>Promedio de edades de hombres: <span id="promedioEdadHombres">0.00</span></h6>
+                        <h6>Promedio de edades de mujeres: <span id="promedioEdadMujeres">0.00</span></h6>
+                        <h6>Edad de la persona más joven: <span id="edadMasJoven">0</span></h6>
+                        <h2>Invitados:</h2>
+                        <ul class="list-group" id="listaInvitados"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script src="/controllers/enunciado1.js"></script>
+<script src="/controllers/enunciado2.js"></script>
+<script src="/controllers/enunciado3.js"></script>
+<script src="/controllers/enunciado4.js"></script>
+<script src="/controllers/enunciado5.js"></script>
+
+</html>
